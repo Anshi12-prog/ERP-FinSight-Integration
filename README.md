@@ -200,19 +200,6 @@ http://localhost:8080/swagger-ui/index.html
 
 ---
 
-# 📸 Project Screenshots
-
-Add screenshots of:
-
-* Dashboard
-* General Ledger
-* Add Ledger
-* Search
-* Financial Summary
-* Swagger UI
-
----
-
 # 🔮 Future Scope
 
 * User Authentication & Authorization
@@ -227,15 +214,12 @@ Add screenshots of:
 
 # 👩‍💻 Developed By
 
-**Anshika Singh**
+**Anshika **
 
-B.Tech Computer Science & Engineering
+B.Tech 
 
 Guru Tegh Bahadur Institute of Technology (GTBIT)
 
 ---
 
-# ⭐ If you found this project useful
-
-Give this repository a ⭐ on GitHub.
 
