@@ -173,8 +173,8 @@ http://localhost:8080/swagger-ui/index.html
 
 ## Developed By
 
-Anshika Singh
+Anshika 
 
-B.Tech Computer Science Engineering
+B.Tech 
 
 Guru Tegh Bahadur Institute of Technology
