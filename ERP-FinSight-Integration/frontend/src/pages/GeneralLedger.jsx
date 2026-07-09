@@ -107,6 +107,7 @@ export default function GeneralLedger() {
 
   };
 
+  console.log("Ledgers State:", ledgers);
   return (
 
     <MainLayout>
