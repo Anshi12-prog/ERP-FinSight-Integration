@@ -12,7 +12,10 @@ import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
 import java.util.List;
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+    "http://localhost:5173",
+    "https://YOUR-VERCEL-PROJECT.vercel.app"
+})
 @RestController
 @RequestMapping("/api/v1/general-ledger")
 @Tag(name = "General Ledger", description = "General Ledger Management APIs")
