@@ -9,7 +9,6 @@ import jakarta.validation.Valid;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.data.domain.Page;
-import org.springframework.web.bind.annotation.CrossOrigin;
 
 import java.util.List;
 @CrossOrigin(origins = {
@@ -131,5 +130,14 @@ public Page<GeneralLedger> getPaginatedEntries(
             size,
             sortBy);
 }
+@RestController
+public class HomeController {
+
+    @GetMapping("/")
+    public String home() {
+        return "ERP FinSight Integration Backend is running!";
+    }
+}
+
 
 }
