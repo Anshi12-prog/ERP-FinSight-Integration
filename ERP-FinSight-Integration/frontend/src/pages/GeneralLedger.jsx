@@ -40,30 +40,44 @@ export default function GeneralLedger() {
   const [openSnackbar, setOpenSnackbar] = useState(false);
 
   useEffect(() => {
-    fetchLedgers();
-  }, []);
+  console.log("GeneralLedger mounted");
+  fetchLedgers();
+}, []);
 
   const fetchLedgers = async () => {
 
-    try {
+  console.log("fetchLedgers called");
 
-      setLoading(true);
+  try {
 
-      const response = await api.get("/general-ledger");
+    setLoading(true);
 
-      setLedgers(response.data);
+    console.log("Calling API...");
 
-    } catch (error) {
+    const response = await api.get("/general-ledger");
 
-      console.error(error);
+    console.log("SUCCESS");
+    console.log(response);
+    console.log(response.data);
 
-    } finally {
+    setLedgers(response.data);
 
-      setLoading(false);
+  } catch (error) {
 
-    }
+    console.log("FAILED");
 
-  };
+    console.log(error);
+    console.log(error.response);
+    console.log(error.message);
+
+  } finally {
+
+    setLoading(false);
+
+  }
+
+};
+
 
   const handleDeleteClick = (id) => {
 
