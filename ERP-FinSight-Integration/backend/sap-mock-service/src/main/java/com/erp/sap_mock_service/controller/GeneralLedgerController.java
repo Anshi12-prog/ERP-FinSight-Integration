@@ -130,14 +130,7 @@ public Page<GeneralLedger> getPaginatedEntries(
             size,
             sortBy);
 }
-@RestController
-public class HomeController {
 
-    @GetMapping("/")
-    public String home() {
-        return "ERP FinSight Integration Backend is running!";
-    }
-}
 
 
 }
